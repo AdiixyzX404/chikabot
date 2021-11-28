@@ -9,7 +9,7 @@ exports.ok = () => {
 exports.err = () => {
     return `‼️Fitur Sedang Error‼️
 
-⏳Sedang melapor bug fitur ke owner-sama⏳`
+⏳Sedang melapor fitur error ke owner⏳`
 }
 
 exports.wrongFormat = (prefix) => {
@@ -21,15 +21,15 @@ exports.emptyMess = () => {
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu* ❎`
+    return `❎ Command *${cmd}* tidak terdaftar ❎`
 }
 
 exports.ownerOnly = () => {
-    return `⚠️ Command ini khusus Owner-sama! ⚠️`
+    return `⚠️ Command ini khusus Owner-adyy! ⚠️`
 }
 
 exports.doneOwner = () => {
-    return `✔  ️Sudah selesai, Owner-sama~`
+    return `✔  ️Sudah selesai, Owner-adyy~`
 }
 
 exports.groupOnly = () => {
@@ -77,73 +77,68 @@ exports.notNum = (q) => {
 }
 
 exports.listMenu = (time, salam, pushname, prefix) => {
-    return `
-*Selamat ${salam} ${pushname} 😖*
-*⌚Time Server : ${time}*
-*📚 List-Menu Chika Beta :*
+    return `_Selamat ${salam} ${pushname}*_
 
-🤖 *INFO*
-├ ${prefix}owner
-├ ${prefix}rules
-├ ${prefix}donate
-└──────
+_Library : baileys-md_
+_Time Server : ${time}_
+_Creator : wa.me/60199782326_
+_Script : github.com/rashidsiregar28/chikabot_
 
-🧑 *OWNER*
-├ > evaluate
-├ $ exec
-├ ${prefix}join link
-├ ${prefix}setppbot (tag/send image)
-└──────
+*INFO*
+${prefix}owner
+${prefix}rules
+${prefix}donate
 
-⚙️ *GROUP*
-├ ${prefix}revoke
-├ ${prefix}leave
-├ ${prefix}group open/close
-├ ${prefix}tagall text
-├ ${prefix}hidetag text
-└──────
+*OWNER*
+>
+$ exec
+${prefix}join
+${prefix}setppbot (tag/send image)
 
-😷 *WEEBS*
-├ ${prefix}anime query
-├ ${prefix}manga query
-├ ${prefix}character query
-└──────
+*GROUP*
+${prefix}revoke
+${prefix}leave
+${prefix}group open/close
+${prefix}tagall text
+${prefix}hidetag text
 
-🔍 *MISC*
-├ ${prefix}film query
-├ ${prefix}wattpad query
-├ ${prefix}webtoons query
-├ ${prefix}drakor query
-├ ${prefix}pinterest query
-└──────
+*ANIME*
+${prefix}anime query
+${prefix}manga query
+${prefix}character query
 
-🎞 *MEDIA*
-├ ${prefix}toimg (tag sticker)
-└──────
+*MISC*
+${prefix}film query
+${prefix}wattpad query
+${prefix}webtoons query
+${prefix}drakor query
+${prefix}pinterest query
 
-⬇️ *DOWNLOADER* 
-├ ${prefix}tiktok link
-├ ${prefix}ytdl link
-├ ${prefix}ytmp3 link
-├ ${prefix}ytmp4 link
-├ ${prefix}ytdl link
-├ ${prefix}facebook link
-├ ${prefix}twitter link
-├ ${prefix}instagram link
-└──────
+*MEDIA*
+${prefix}toimg (tag sticker)
 
-🙏 *THANKS*
-├ Xfarr api
-├ Baileys#multi-device
-├ and all support
-└──────
+*DOWNLOADER* 
+${prefix}tiktok link
+${prefix}ytdl link
+${prefix}ytmp3 link
+${prefix}ytmp4 link
+${prefix}ytdl link
+${prefix}facebook link
+${prefix}twitter link
+${prefix}instagram link
+
+*THANKS*
+Rashid Siregar
+Xfarr api
+Baileys#multi-device
+and all support
 
     `
 }
 
 exports.rules = (prefix) => {
     return `
-*── 「 RULES AND FAQ 」 ──*
+*RULES*
 
 1. Jangan spam bot. 🙅
 Sanksi: *⚠️ WARN/SOFT BLOCK*
@@ -154,6 +149,7 @@ Sanksi: *❎ SOFT BLOCK*
 3. Jangan mengeksploitasi bot.😖
 Sanksi: *‼️ PERMANENT BLOCK ‼️*
 
+*FAQS*
 🗯️ Bot tidak atau lambat merespon ?
 ➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
 
@@ -168,14 +164,6 @@ Sanksi: *‼️ PERMANENT BLOCK ‼️*
 
 🗯️ Kak, kok syaa chat owner tidak direspon?
 ➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
-
-
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan ChikaBot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
-
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan chika-bot
-😖🙏
 
 
     `
